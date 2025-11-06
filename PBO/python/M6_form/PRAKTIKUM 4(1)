@@ -1,0 +1,27 @@
+BEGIN
+   INPUT store_name
+   INPUT purchase_date
+   INPUT cashier_name
+   INPUT customer_name
+   INPUT total_purchase
+
+   IF total_purchase > 300000 THEN
+      DISCOUNT ← 0.3 * total_purchase
+   ELSIF total_purchase > 100000 AND total_purchase <= 300000 THEN
+      DISCOUNT ← 0.15 * total_purchase
+   ELSIF total_purchase > 50000 AND total_purchase <= 100000 THEN
+      DISCOUNT ← 0.02 * total_purchase
+   ELSE
+      DISCOUNT ← 0
+   ENDIF
+
+   FINAL_PRICE ← total_purchase - DISCOUNT
+
+   OUTPUT store_name
+   OUTPUT purchase_date
+   OUTPUT cashier_name
+   OUTPUT customer_name
+   OUTPUT total_purchase
+   OUTPUT DISCOUNT
+   OUTPUT FINAL_PRICE
+END

@@ -1,0 +1,12 @@
+1. Mulai
+2. Tampilkan judul "Sistem Aplikasi Perpustakaan Sekolah"
+3. Tampilkan "FORM LOGIN"
+4. Masukkan username
+5. Masukkan password
+6. Masukkan hak akses/privilage
+7. Jika username = "rplskaneda" dan password = "12345" dan privilage = "admin" maka:
+     - Cetak "Login berhasil .."
+     - Cetak "Anda sebagai admin"
+8. Jika tidak:
+     - Cetak "Login gagal."
+9. Selesai
