@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .subjudul {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        form {
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        input[type="password"],
+        select {
+            width: 95%;
+            padding: 6px;
+        }
+        .submit-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src=".jpeg" alt="Gedung Universitas">
+        </div>
+        <h2>FORM PENDAFTARAN MAHASISWA BARU</h2>
+        <div class="subjudul">DATA DIRI</div>
+        <form action="https://smkn2mojokerto.sch.id" method="post">
+            <table>
+                <tr>
+                    <td>Nama Lengkap:</td>
+                    <td><input type="text" name="nama"></td>
+                    <td>Nomor Identitas (NIK):</td>
+                    <td><input type="number" name="nik"></td>
+                </tr>
+                <tr>
+                    <td>Tempat Lahir:</td>
+                    <td><input type="text" name="tempat_lahir"></td>
+                    <td>Tanggal Lahir:</td>
+                    <td><input type="date" name="tanggal_lahir"></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin:</td>
+                    <td>
+                        <select name="gender">
+                            <option value="">--Pilih--</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                    </td>
+                    <td>Agama:</td>
+                    <td>
+                        <select name="agama">
+                            <option value="">--Pilih--</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Kristen">Kristen</option>
+                            <option value="Katolik">Katolik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kewarganegaraan:</td>
+                    <td><input type="text" name="kewarganegaraan"></td>
+                    <td>Nama Ibu Kandung:</td>
+                    <td><input type="text" name="ibu_kandung"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" name="email"></td>
+                    <td>No Telp:</td>
+                    <td><input type="tel" name="telp"></td>
+                </tr>
+            </table>
+            <div class="submit-btn">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+        <div class="footer">
+            CopyRight by Filbian Yusril Al Rasyid - 2025
+        </div>
+    </div>
+</body>
+</html>

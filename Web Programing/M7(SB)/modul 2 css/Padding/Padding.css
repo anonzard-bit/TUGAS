@@ -1,0 +1,12 @@
+/* Contoh penggunaan padding */
+.box {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+
+.box {
+  padding: 10px 20px; /* atas/bawah 10px, kiri/kanan 20px */
+}

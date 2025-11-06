@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Desain Tabel dengan CSS</title>
+  <style>
+    /* A. Border Tabel */
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    /* B. Border Collapse */
+    table {
+      border-collapse: collapse;
+    }
+
+    /* C. Border Spacing */
+    .spaced {
+      border-collapse: separate;
+      border-spacing: 10px;
+    }
+
+    /* D. Lebar dan Tinggi */
+    table {
+      width: 80%;
+      height: auto;
+    }
+
+    /* E. Perataan Teks Tabel */
+    th, td {
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    /* F. Tabel Padding */
+    th, td {
+      padding: 10px;
+    }
+
+    /* G. Warna Tabel */
+    table {
+      background-color: #f9f9f9;
+      color: #333;
+      border: 2px solid #555;
+    }
+
+    /* H. Pseudo Class */
+    tr:hover {
+      background-color: #d0ebff;
+    }
+
+    a:link {
+      color: blue;
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    /* I. Pseudo Element */
+    p::first-letter {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    p::first-line {
+      color: green;
+    }
+
+    p::before {
+      content: "Awal - ";
+    }
+
+    p::after {
+      content: " - Akhir";
+    }
+
+    /* J. Overflow */
+    .overflow-box {
+      width: 300px;
+      height: 100px;
+      background-color: #eee;
+      margin-bottom: 20px;
+    }
+
+    #visible {
+      overflow: visible;
+    }
+
+    #hidden {
+      overflow: hidden;
+    }
+
+    #scroll {
+      overflow: scroll;
+    }
+
+    #auto {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Demo Tabel CSS A–J</h1>
+
+  <table>
+    <tr>
+      <th>Nama</th>
+      <th>Kelas</th>
+      <th>Alamat</th>
+    </tr>
+    <tr>
+      <td>Filbian</td>
+      <td>RPL</td>
+      <td>Jombang</td>
+    </tr>
+    <tr>
+      <td>Yusril</td>
+      <td>RPL</td>
+      <td>Mojokerto</td>
+    </tr>
+  </table>
+
+  <br><hr><br>
+
+  <p>Ini adalah paragraf contoh untuk pseudo element.</p>
+
+  <br><hr><br>
+
+  <div class="overflow-box" id="visible">
+    <strong>Overflow: visible</strong><br>
+    Konten panjang akan tetap terlihat dan meluber keluar dari kotak ini. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+
+  <div class="overflow-box" id="hidden">
+    <strong>Overflow: hidden</strong><br>
+    Konten panjang akan dipotong dan tidak terlihat.
+  </div>
+
+  <div class="overflow-box" id="scroll">
+    <strong>Overflow: scroll</strong><br>
+    Konten panjang bisa digulir dengan scrollbar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+
+  <div class="overflow-box" id="auto">
+    <strong>Overflow: auto</strong><br>
+    Scroll akan muncul hanya jika diperlukan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+
+</body>
+</html>

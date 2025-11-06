@@ -1,0 +1,24 @@
+p {
+color: #0606d7;
+text-align: center;
+font-size: large;
+background-color: #ebd2d2;
+}
+
+#baris {
+color: #0606d7;
+text-align: justify;
+font-size: larger;
+background-color: #ebd2d2;
+}
+
+p {
+    color: bisque;
+    background-color: aquamarine;
+}
+
+.posisi {
+    color: #0606d7;
+    background-color: aquamarine;
+} 
+

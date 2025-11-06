@@ -1,0 +1,11 @@
+/* Contoh penggunaan border */
+.box {
+  border-width: 2px;
+  border-style: solid;
+  border-color: blue;
+}
+ 
+
+.box {
+  border: 2px solid blue;
+}

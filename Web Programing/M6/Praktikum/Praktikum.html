@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Anggota Baru</title>
+</head>
+<body>
+    <h2>Form Pendaftaran Anggota Baru</h2>
+    <form action="#" method="post">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+        <label for="laki">Laki-laki</label>
+        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="30" required></textarea><br><br>
+
+        <label for="tgl_lahir">Tanggal Lahir:</label><br>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" required><br><br>
+
+        <label>Hobi:</label><br>
+        <input type="checkbox" id="membaca" name="hobi[]" value="Membaca">
+        <label for="membaca">Membaca</label>
+        <input type="checkbox" id="olahraga" name="hobi[]" value="Olahraga">
+        <label for="olahraga">Olahraga</label>
+        <input type="checkbox" id="musik" name="hobi[]" value="Musik">
+        <label for="musik">Musik</label>
+        <input type="checkbox" id="lainnya" name="hobi[]" value="Lainnya">
+        <label for="lainnya">Lainnya</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

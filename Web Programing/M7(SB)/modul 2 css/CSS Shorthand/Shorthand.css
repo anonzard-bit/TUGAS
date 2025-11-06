@@ -1,0 +1,6 @@
+/* Contoh shorthand untuk margin dan padding */
+.box {
+  margin: 10px 15px 20px 25px; /* atas, kanan, bawah, kiri */
+  padding: 5px 10px 15px 20px; /* atas, kanan, bawah, kiri */
+}
+

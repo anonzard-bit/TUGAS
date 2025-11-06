@@ -1,0 +1,155 @@
+Berikut adalah rangkuman kode CSS dari bagian **A sampai J** berdasarkan modul "Mendesain Tabel dengan CSS" yang sedang kamu buka. Aku susun agar mudah dipahami dan bisa langsung kamu praktikkan:
+
+---
+
+## 🅰️ Border Tabel
+
+```css
+table, th, td {
+  border: 1px solid black;
+}
+```
+
+---
+
+## 🅱️ Border Collapse
+
+```css
+table {
+  border-collapse: collapse; /* atau gunakan 'separate' */
+}
+```
+
+---
+
+## 🅲 Border Spacing
+
+```css
+table {
+  border-collapse: separate;
+  border-spacing: 10px; /* jarak antar sel */
+}
+```
+
+---
+
+## 🅳 Lebar dan Tinggi
+
+```css
+table {
+  width: 100%;
+  height: auto;
+}
+```
+
+---
+
+## 🅴 Perataan Teks Tabel
+
+```css
+th, td {
+  text-align: center;     /* horizontal */
+  vertical-align: middle; /* vertikal */
+}
+```
+
+---
+
+## 🅵 Tabel Padding
+
+```css
+th, td {
+  padding: 10px; /* jarak antara border dan isi */
+}
+```
+
+---
+
+## 🅶 Warna Tabel
+
+```css
+table {
+  border: 2px solid #333;
+  background-color: #f9f9f9;
+  color: #333;
+}
+```
+
+---
+
+## 🅷 Pseudo Class
+
+```css
+tr:hover {
+  background-color: lightblue;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:active {
+  color: red;
+}
+```
+
+---
+
+## 🅸 Pseudo Element
+
+```css
+p::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+p::first-line {
+  color: green;
+}
+
+p::before {
+  content: "Awal - ";
+}
+
+p::after {
+  content: " - Akhir";
+}
+```
+
+---
+
+## 🅹 Pemanfaatan Overflow
+
+```css
+#box1 {
+  width: 300px;
+  height: 100px;
+  overflow: visible;
+}
+
+#box2 {
+  width: 300px;
+  height: 100px;
+  overflow: hidden;
+}
+
+#box3 {
+  width: 300px;
+  height: 100px;
+  overflow: scroll;
+}
+
+#box4 {
+  width: 300px;
+  height: 100px;
+  overflow: auto;
+}
+```
+
+---
+
+Kalau kamu mau aku gabungkan semua ini ke dalam satu file HTML untuk latihan, tinggal bilang aja. Bisa juga aku bantu buat versi interaktif atau responsif!
